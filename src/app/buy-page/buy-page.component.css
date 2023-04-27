@@ -30,3 +30,133 @@
 ::placeholder {
     color: black;
 }
+
+.results {
+    margin-left: 50px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    height: 35px
+}
+
+.text-results {
+    font-size: 26px;
+    font-family: monospace;
+}
+
+.text-filter {
+    font-size: 18px;
+    font-family: Times;
+    margin-top: -5px;
+    margin-right: 2px;
+}
+
+.filters-icon {
+    width: 20px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    border: 1px solid rgb(6, 3, 49);
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.book-card {
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.first-book-card {
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.book-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.first-book-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.book-img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-details {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.title {
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.price {
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.delivery-text {
+    font-size: 14px;
+    font-family: monospace;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.delivery-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.heart-icon {
+    margin-top: 10px;
+    width: 40px;
+    align-self: flex-start;
+    margin-left: 430px; 
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.condition {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 14px;
+    font-family: monospace;
+    color:white;
+    /* width: 75px; */
+    margin-left: -240px;
+    margin-right: 270px;
+    align-content: center;
+    background-color: rgb(26, 25, 25);
+    margin-top: 10px;
+}
