@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+/* body {background: linear-gradient(to right, #01001b 20%, #00d4ff); height: 100vh;} */
+img,
+svg {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-just-center {
+    justify-content: center;
+}
+
+.flex-just-btw {
+    justify-content: space-between;
+}
+
+.flex-al-center {
+    align-items: center;
+}
+
+.txt-al-center {
+    text-align: center;
+}
+
+.padd-20 {
+    padding: 20px;
+}
+
+.padd-t-80 {
+    padding: 80px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* HEADER */
+header {
+    background-color: #01001b;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-logo {
+    width: 100px;
+}
+
+.main-menu__item {
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.header-rsp-menu-btn {
+    width: 40px;
+    display: none;
+}
+
+.menu-responsive {
+    display: none;
+    position: fixed;
+    background: #01001b;
+    color: #ffffff;
+    height: 100%;
+    width: 35%;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.menu-responsive__item {
+    margin-top: 60px;
+}
+
+.menu-responsive-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-responsive-close-btn__btn {
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-rsp-menu-btn {
+        display: block;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .menu-responsive {
+        display: block;
+    }
+}
+
+.menu-responsive.active {
+    right: 0;
+    transition: 0.2s;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    height: auto;
+}
+
+.icon-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.li {
+    align-content: center;
+    align-self: center;
+}
+
+button {
+    color: white;
+    font-size: 14px;
+    font-family: monospace;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #09205e;
+    transition: 0.3s;
+}
+
+.button-item {
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.main-menu__item:hover {
+    background-color: #09205e;
+    transition: 0.3s;
+}
+
+.menu-responsive__item:hover {
+    background-color: #09205e;
+    transition: 0.3s;
+}

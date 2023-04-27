@@ -1,0 +1,15 @@
+.background {
+    height: 100vh;
+    background-image: url(../../assets/books.jpg);
+    opacity: 0.3;
+}
+
+p {
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 100px;
+    color: black;
+    margin-top: -450px;
+    margin-left: 28%;
+    font-style: bold;
+}

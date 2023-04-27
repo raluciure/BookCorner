@@ -1,0 +1,85 @@
+<div class="container">
+    <p class="welcome-text">Hello, Alberto!</p>
+    <form #bookForm="ngForm" class="form">
+        <div class="form-group">
+            <label>Title</label>
+            <input appHighlight class="form-control" type="text" required [(ngModel)]="book.title" name="ntitle"
+                placeholder="Title, ISBN..." #ntitle="ngModel">
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select class="form-select" aria-label="Category select" [(ngModel)]="book.category" name="ncategory"
+                placeholder="Category">
+                <option value="" disabled selected hidden>Category</option>
+                <option value="Academic" [selected]="(book.category == 'Academic')">Academic</option>
+                <option value="Narrative" [selected]="(book.category == 'Narrative')">Narrative</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Purpose</label>
+            <select class="form-select" aria-label="Category select" [(ngModel)]="purpose" name="npurpose"
+                placeholder="Purpose">
+                <option value="" disabled selected hidden>Purpose</option>
+                <option value="Buy" [selected]="(purpose == 'Buy')">Buy</option>
+                <option value="Borrow" [selected]="(purpose == 'Borrow')">Borrow</option>
+            </select>
+        </div>
+
+        <div class="form-group" type="button">
+            <img class="icon" src="assets\search.svg" alt="start search button" (click) = "search()">
+        </div>
+    </form>
+
+    <p class="suggested">Suggested for you</p>
+
+    <div class="card-group">
+        <div class="card">
+            <img class="img-card" src="assets\book1.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
+            <div class="container-card">
+                <p class="card-text"><b>A Time to Kill</b></p>
+            </div>
+            <p class="purpose-text">To buy</p>
+            <p class="price-text">€5.90</p>
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+        </div>
+        <div class="card">
+            <img class="img-card" src="assets\book2.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
+            <div class="container-card">
+                <p class="card-text"><b>The House of Mirth</b></p>
+            </div>
+            <p class="purpose-text">To borrow</p>
+            <p class="price-text">for free</p>
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+        </div>
+        <div class="card">
+            <img class="img-card" src="assets\book3.jpg" alt="Avatar" style="width:100%"(click)="toUnimplemented()">
+            <div class="container-card">
+                <p class="card-text"><b>East of Eden</b></p>
+            </div>
+            <p class="purpose-text">To buy</p>
+            <p class="price-text">€5.90</p>
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+        </div>
+        <div class="card">
+            <img class="img-card" src="assets\book4.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
+            <div class="container-card">
+                <p class="card-text"><b>The Sun Also Rises</b></p>
+            </div>
+            <p class="purpose-text">To buy</p>
+            <p class="price-text">€3.50</p>
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+        </div>
+        <div class="card">
+            <img class="img-card" src="assets\book5.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
+            <div class="container-card">
+                <p class="card-text"><b>Vile Bodies</b></p>
+            </div>
+            <p class="purpose-text">To borrow</p>
+            <p class="price-text">€2</p>
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+        </div>
+    </div>
+
+</div>

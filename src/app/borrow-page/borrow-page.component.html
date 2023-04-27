@@ -1,0 +1,30 @@
+<div class="container">
+    <form #bookForm="ngForm" class="form">
+        <div class="form-group">
+            <label>Title</label>
+            <input appHighlight class="form-control" type="text" placeholder="Picture of Dorian Gray" disabled>
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select class="form-select" aria-label="Category select" placeholder="Category" disabled>
+                <option value="" disabled hidden>Category</option>
+                <option value="Academic">Academic</option>
+                <option value="Narrative" selected>Narrative</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Purpose</label>
+            <select class="form-select" aria-label="Category select" placeholder="Purpose" disabled>
+                <option value="" disabled hidden>Purpose</option>
+                <option value="Borrow" selected>Borrow</option>
+                <option value="Buy">Buy</option>
+            </select>
+        </div>
+
+        <div class="form-group" aria-disabled="true">
+            <img class="icon" src="assets\search.svg" alt="start search button">
+        </div>
+    </form>
+</div>

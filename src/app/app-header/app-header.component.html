@@ -1,0 +1,48 @@
+<div class="menu-responsive">
+    <div class="menu-responsive-close-btn padd-20">
+        <button class="menu-responsive-close-btn__btn pointer">
+            <img src="assets/close.svg" alt="close icon" (click)="closeMenu()" />
+        </button>
+    </div>
+
+    <nav class="padd-20">
+        <ul>
+            <li class="menu-responsive__item pointer">Sell or lend book</li>
+            <li class="menu-responsive__item pointer" (click)="toUnimplemented()">Favorites</li>
+            <li class="menu-responsive__item pointer" (click)="toUnimplemented()">Chat</li>
+            <li class="menu-responsive__item pointer" (click)="toUnimplemented()">My profile</li>
+        </ul>
+    </nav>
+</div>
+
+<header class="flex flex-just-btw flex-al-center padd-20">
+    <div class="header-logo pointer" (click)="toWelcomePage()">
+        <img src="assets/logo.png" alt="Book corner logo" />
+    </div>
+    <nav class="main-menu">
+        <ul class="flex">
+            <li class="button-item">
+                <button type="button">
+                    Sell or lend a book
+                </button>
+            </li>
+            <li class="main-menu__item pointer" (click)="toUnimplemented()">
+                <img class="icon" src="assets\chat.svg" alt="chat icon">
+                <p class="icon-text">Chat</p>
+            </li>
+            <li class="main-menu__item pointer" (click)="toUnimplemented()">
+                <img class="icon" src="assets\heart.svg" alt="favorites icon">
+                <p class="icon-text">Favorites</p>
+            </li>
+            <li class="main-menu__item pointer" (click)="toUnimplemented()">
+                <img class="icon" src="assets\profile.svg" alt="profile icon">
+                <p class="icon-text">My profile</p>
+            </li>
+        </ul>
+    </nav>
+    <div class="header-rsp-menu-btn">
+        <button class="header-rsp-menu-btn__btn pointer" (click)="openMenu()">
+            <img src="assets/menu.svg" alt="menu icon" />
+        </button>
+    </div>
+</header>
