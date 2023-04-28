@@ -1,0 +1,39 @@
+<div class="filter-box">
+    <img src="assets/close-bold.svg" alt="close icon" type="button" class="icon" (click)="closeFilter()" />
+    <label class="text"><b>Price</b></label>
+    <div class="price-range">
+        <label class="text">From</label>
+        <input placeholder="€">
+        <label class="text">To</label>
+        <input placeholder="€">
+    </div>
+    <div class="price-range">
+        <input type="checkbox" id="prices" name="prices">
+        <label class="checkbox-text" for="prices">All prices</label>
+    </div>
+    <hr class="solid">
+    <label class="text"><b>Conditions</b></label>
+    <div class="price-range">
+        <input type="checkbox" id="as-new" name="as-new">
+        <label class="checkbox-text" for="as-new">As new</label>
+        <input type="checkbox" id="quite-good" name="quite-good">
+        <label class="checkbox-text" for="quite-good">Quite good</label>
+    </div>
+    <div class="price-range">
+        <input type="checkbox" id="good" name="good">
+        <label class="checkbox-text" for="good">Good</label>
+        <input type="checkbox" id="damaged" name="damaged">
+        <label class="checkbox-text" for="damaged">Damaged</label>
+    </div>
+    <hr class="solid">
+    <label class="text"><b>Delivery methods</b></label>
+    <div class="price-range">
+        <input type="checkbox" id="home-delivery" name="home-delivery">
+        <label class="checkbox-text" for="home-delivery">Home delivery</label>
+    </div>
+    <div class="price-range">
+        <input type="checkbox" id="personal-delivery" name="personal-delivery">
+        <label class="checkbox-text" for="personal-delivery">In person exchange</label>
+    </div>
+    <button class="btn btn-primary" (click)="saveFilter()">Save</button>
+</div>

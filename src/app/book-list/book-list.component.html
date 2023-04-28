@@ -1,9 +1,9 @@
 <div class="container">
     <p class="welcome-text">Hello, Alberto!</p>
-    <form #bookForm="ngForm" class="form">
+    <form #bookForm="ngForm" class="form" name="myForm">
         <div class="form-group">
             <label>Title</label>
-            <input appHighlight class="form-control" type="text" required [(ngModel)]="book.title" name="ntitle"
+            <input appHighlight class="form-control" type="text" required [(ngModel)]="book.title" name="ntitle" id="title"
                 placeholder="Title, ISBN..." #ntitle="ngModel">
         </div>
 
@@ -27,8 +27,8 @@
             </select>
         </div>
 
-        <div class="form-group" type="button">
-            <img class="icon" src="assets\search.svg" alt="start search button" (click) = "search()">
+        <div class="form-group" type="submit">
+            <img class="icon" src="assets\search.svg" alt="start search button" (click)="search()">
         </div>
     </form>
 
@@ -42,7 +42,8 @@
             </div>
             <p class="purpose-text">To buy</p>
             <p class="price-text">€5.90</p>
-            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon"
+                (click)="toUnimplemented()">
         </div>
         <div class="card">
             <img class="img-card" src="assets\book2.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
@@ -51,16 +52,18 @@
             </div>
             <p class="purpose-text">To borrow</p>
             <p class="price-text">for free</p>
-            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon"
+                (click)="toUnimplemented()">
         </div>
         <div class="card">
-            <img class="img-card" src="assets\book3.jpg" alt="Avatar" style="width:100%"(click)="toUnimplemented()">
+            <img class="img-card" src="assets\book3.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
             <div class="container-card">
                 <p class="card-text"><b>East of Eden</b></p>
             </div>
             <p class="purpose-text">To buy</p>
             <p class="price-text">€5.90</p>
-            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon"
+                (click)="toUnimplemented()">
         </div>
         <div class="card">
             <img class="img-card" src="assets\book4.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
@@ -69,7 +72,8 @@
             </div>
             <p class="purpose-text">To buy</p>
             <p class="price-text">€3.50</p>
-            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon"
+                (click)="toUnimplemented()">
         </div>
         <div class="card">
             <img class="img-card" src="assets\book5.jpg" alt="Avatar" style="width:100%" (click)="toUnimplemented()">
@@ -78,7 +82,8 @@
             </div>
             <p class="purpose-text">To borrow</p>
             <p class="price-text">€2</p>
-            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon" (click)="toUnimplemented()">
+            <img class="card-icon" src="assets\black-heart.svg" alt="Add to favorites button icon"
+                (click)="toUnimplemented()">
         </div>
     </div>
 

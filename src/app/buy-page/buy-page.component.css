@@ -146,6 +146,16 @@
     border-radius: 5px;
 }
 
+.heart-icon2 {
+    margin-top: 10px;
+    width: 40px;
+    align-self: flex-start;
+    margin-left: 410px; 
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .condition {
     border: 1px solid black;
     border-radius: 10px;
@@ -153,10 +163,17 @@
     font-size: 14px;
     font-family: monospace;
     color:white;
-    /* width: 75px; */
-    margin-left: -240px;
-    margin-right: 270px;
+    margin-left: -200px;
+    margin-right: 250px;
     align-content: center;
     background-color: rgb(26, 25, 25);
     margin-top: 10px;
+}
+
+.filter-box {
+    margin-left: 210px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 240px;
+    visibility: hidden;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -8,9 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class BuyPageComponent implements OnInit {
 
+  @ViewChild('filter') el:ElementRef;
+
   constructor(
     private router: Router,
-    private route: ActivatedRoute,) { }
+    private route: ActivatedRoute,) { 
+    }
 
   ngOnInit(): void {
   }
@@ -18,5 +21,9 @@ export class BuyPageComponent implements OnInit {
   toUnimplemented() {
     this.router.navigate([`/unimplemented`]);
   } 
+
+  filterPress() {
+    this.el.nativeElement.style.visibility = "visible";
+  }
 
 }

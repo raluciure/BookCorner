@@ -30,14 +30,33 @@ export class BookListComponent implements OnInit {
 
   toUnimplemented() {
     this.router.navigate([`/unimplemented`]);
-  } 
+  }
 
   search() {
-    if(this.bookForm.value.ntitle == 'Diary of a Wimpy Kid' || this.bookForm.value.npurpose == 'Buy') {
-      this.router.navigate([`/buy`]);
+    const inputElement = document.getElementById('title') as HTMLInputElement;
+    console.log(inputElement.value);
+    if (inputElement.value == "") {
+      alert("Title of book is required.");
     }
-    else if (this.bookForm.value.ntitle == '"Picture of Dorian Gray"' || this.bookForm.value.npurpose == 'Borrow') {
-      this.router.navigate([`/borrow`]);
+    else {
+      if (this.bookForm.value.ntitle == 'Diary of a Wimpy Kid' && this.bookForm.value.ncategory == "Narrative" && this.bookForm.value.npurpose == 'Buy') {
+        this.router.navigate([`/buy`]);
+      }
+      else if (this.bookForm.value.ntitle == 'Diary of a Wimpy Kid' && this.bookForm.value.npurpose == 'Buy') {
+        this.router.navigate([`/buy`]);
+      }
+      else if (this.bookForm.value.ntitle == 'Diary of a Wimpy Kid') {
+        this.router.navigate([`/buy-title`]);
+      }
+      else if (this.bookForm.value.ntitle == 'Picture of Dorian Gray' && this.bookForm.value.npurpose == 'Borrow') {
+        this.router.navigate([`/borrow`]);
+      }
+      else if (this.bookForm.value.ntitle == 'Picture of Dorian Gray' && this.bookForm.value.ncategory == "Narrative" && this.bookForm.value.npurpose == 'Borrow') {
+        this.router.navigate([`/borrow`]);
+      }
+      else if (this.bookForm.value.ntitle == 'Picture of Dorian Gray') {
+        this.router.navigate([`/borrow-title`]);
+      }
     }
   }
 }

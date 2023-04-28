@@ -1,0 +1,65 @@
+<div class="container">
+    <form #bookForm="ngForm" class="form">
+        <div class="form-group">
+            <label>Title</label>
+            <input appHighlight class="form-control" type="text" placeholder="Diary of a Wimpy Kid" disabled>
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select class="form-select" aria-label="Category select" placeholder="Category" disabled>
+                <option value="" disabled hidden>Category</option>
+                <option value="Academic">Academic</option>
+                <option value="Narrative" selected>Narrative</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Purpose</label>
+            <select class="form-select" aria-label="Category select" placeholder="Purpose" disabled>
+                <option value="" disabled hidden>Purpose</option>
+                <option value="Buy" selected>Buy</option>
+                <option value="Borrow">Borrow</option>
+            </select>
+        </div>
+
+        <div class="form-group" aria-disabled="true">
+            <img class="icon" src="assets\search.svg" alt="start search button">
+        </div>
+    </form>
+    <div class="results">
+        <p class="text-results">1 result found</p>
+        <div class="filters">
+            <div class="filter">
+                <p class="text-filter">€6-€10</p>
+                <img class="filters-icon" src="assets\close-bold.svg" alt="close icon">
+            </div>
+            <div class="filter">
+                <p class="text-filter">As new</p>
+                <img class="filters-icon" src="assets\close-bold.svg" alt="close icon">
+            </div>
+            <div class="filter-delivery">
+                <p class="text-filter">Home delivery</p>
+                <img class="filters-icon" src="assets\close-bold.svg" alt="close icon">
+            </div>
+            <img class="filters-icon" src="assets\filters.svg" alt="filters icon">
+        </div>
+    </div>
+    <div class="first-book-card">
+        <img class="book-img" src="assets\diary2.jpg" alt="The image for 'Diary of a Wimpy kid'">
+        <div class="book-details">
+            <p class="title"><b>Diary of a Wimpy Kid</b></p>
+            <p class="price">€8</p>
+            <div class="delivery-details">
+                <img class="filters-icon" src="assets\delivery.svg" alt="home delivery icon">
+                <p class="delivery-text">home delivery</p>
+            </div>
+        </div>
+        <div>
+            <p class="condition">As new</p>
+        </div>
+        <img type="button" class="heart-icon" src="assets\black-heart.svg" alt="add to favorites icon"
+            (click)="toUnimplemented()">
+    </div>
+
+</div>

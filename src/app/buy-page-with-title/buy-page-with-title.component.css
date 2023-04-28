@@ -69,7 +69,7 @@
 }
 
 .book-card {
-    display: flex;
+    display:flex;
     flex-direction: row;
     margin-left: 50px;
     margin-top: 20px;
@@ -79,10 +79,10 @@
 }
 
 .first-book-card {
-    display: flex;
+    display:flex;
     flex-direction: row;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     cursor: pointer;
@@ -126,12 +126,7 @@
     font-size: 14px;
     font-family: monospace;
     margin-left: 5px;
-}
-
-.period-text {
-    font-size: 14px;
-    font-family: monospace;
-    margin-top: -10px;
+    margin-top: 15px;
 }
 
 .delivery-details {
@@ -145,7 +140,7 @@
     margin-top: 10px;
     width: 40px;
     align-self: flex-start;
-    margin-left: 430px;
+    margin-left: 430px; 
     border: 1px solid gray;
     padding: 5px;
     border-radius: 5px;
@@ -155,7 +150,7 @@
     margin-top: 10px;
     width: 40px;
     align-self: flex-start;
-    margin-left: 410px;
+    margin-left: 410px; 
     border: 1px solid gray;
     padding: 5px;
     border-radius: 5px;
@@ -167,58 +162,25 @@
     padding: 7px;
     font-size: 14px;
     font-family: monospace;
-    color: white;
-    margin-left: -150px;
-    margin-right: 200px;
+    color:white;
+    margin-left: -200px;
+    margin-right: 250px;
     align-content: center;
     background-color: rgb(26, 25, 25);
     margin-top: 10px;
 }
 
-.availability {
-    color: #f4fdd0;
-    font-size: 14px;
+.text-purpose {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 22px;
     font-family: monospace;
-    margin-left: 10px;
-    margin-top: 2px;
 }
 
-.av {
-    background-color: teal;
-    align-content: center;
-    border-radius: 5px;
-    width: 170px;
-    height: 25px;
-    margin-top: -10px;
-}
-
-.av-now {
-    background-color: teal;
-    align-content: center;
-    border-radius: 5px;
-    width: 120px;
-    height: 25px;
-    margin-top: -10px;
-}
-
-.delivery-icon {
-    width: 20px;
-    margin-top: -14px;
-}
-
-.lending {
-    align-content: center;
-    border-radius: 5px;
-    width: 220px;
-    height: 25px;
-    background-color: gold;
-    margin-top: 5px;
-}
-
-.lending-text {
-    color: #363533;
-    font-size: 14px;
-    font-family: monospace;
-    margin-left: 10px;
-    margin-top: 2px;
+.filter-box {
+    margin-left: 210px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 240px;
+    visibility: hidden;
 }

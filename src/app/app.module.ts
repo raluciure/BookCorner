@@ -11,6 +11,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { BuyPageComponent } from './buy-page/buy-page.component';
 import { BorrowPageComponent } from './borrow-page/borrow-page.component';
+import { BuyPageWithTitleComponent } from './buy-page-with-title/buy-page-with-title.component';
+import { BuyFiltersComponent } from './buy-filters/buy-filters.component';
+import { BorrowFiltersComponent } from './borrow-filters/borrow-filters.component';
+import { BuyFilterResultsComponent } from './buy-filter-results/buy-filter-results.component';
+import { BorrowPageWithTitleComponent } from './borrow-page-with-title/borrow-page-with-title.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { BorrowPageComponent } from './borrow-page/borrow-page.component';
     UnimplementedPageComponent,
     BookListComponent,
     BuyPageComponent,
-    BorrowPageComponent
+    BorrowPageComponent,
+    BuyPageWithTitleComponent,
+    BuyFiltersComponent,
+    BorrowFiltersComponent,
+    BuyFilterResultsComponent,
+    BorrowPageWithTitleComponent
   ],
   imports: [
     BrowserModule,

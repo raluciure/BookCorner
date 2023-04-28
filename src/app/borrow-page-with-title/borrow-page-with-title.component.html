@@ -16,10 +16,10 @@
 
         <div class="form-group">
             <label>Purpose</label>
-            <select class="form-select" aria-label="Category select" placeholder="Purpose" disabled>
-                <option value="" disabled hidden>Purpose</option>
-                <option value="Borrow" selected>Borrow</option>
+            <select id="purpose" class="form-select" aria-label="Category select" placeholder="Purpose" (change)="goToBorrow()">
+                <option value="" selected disabled hidden></option>
                 <option value="Buy">Buy</option>
+                <option value="Borrow">Borrow</option>
             </select>
         </div>
 
@@ -36,6 +36,8 @@
         </div>
     </div>
 
+    <p class="text-purpose">To buy</p>
+
     <div class="first-book-card">
         <img class="book-img" src="assets\gray1.jpg" alt="The image for 'Diary of a Wimpy kid'">
         <div class="book-details">
@@ -46,9 +48,6 @@
                 <p class="delivery-text">home delivery</p>
             </div>
             <p class="period-text">Lending period: 2 weeks</p>
-            <div class="av">
-                <p class="availability">Available from May</p>
-            </div>
         </div>
         <div>
             <p class="condition">As new</p>
@@ -56,6 +55,8 @@
         <img type="button" class="heart-icon" src="assets\black-heart.svg" alt="add to favorites icon"
             (click)="toUnimplemented()">
     </div>
+
+    <p class="text-purpose">To borrow</p>
 
     <div class="book-card">
         <img class="book-img" src="assets\gray2.jpg" alt="The image for 'Diary of a Wimpy kid'">
