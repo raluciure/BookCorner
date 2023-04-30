@@ -1,0 +1,42 @@
+.container {
+  padding-top: 100px;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gainsboro;
+}
+
+.active {
+  background-color: #007bff;
+}
+
+.step-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.line {
+  flex-grow: 1;
+  height: 4px;
+  background: gainsboro;
+  margin-bottom: 30px;
+}
+.col {
+  display: flex;
+  align-items: center;
+
+
+}

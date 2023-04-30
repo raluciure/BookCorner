@@ -16,6 +16,10 @@ import { BuyFiltersComponent } from './buy-filters/buy-filters.component';
 import { BorrowFiltersComponent } from './borrow-filters/borrow-filters.component';
 import { BuyFilterResultsComponent } from './buy-filter-results/buy-filter-results.component';
 import { BorrowPageWithTitleComponent } from './borrow-page-with-title/borrow-page-with-title.component';
+import { GiveBookComponent } from './give-book/give-book.component';
+import { DescriptionComponent } from './give-book/description/description.component';
+import { VerificationComponent } from './give-book/verification/verification.component';
+import { ConfirmationComponent } from './give-book/confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { BorrowPageWithTitleComponent } from './borrow-page-with-title/borrow-pa
     BuyFiltersComponent,
     BorrowFiltersComponent,
     BuyFilterResultsComponent,
-    BorrowPageWithTitleComponent
+    BorrowPageWithTitleComponent,
+    GiveBookComponent,
+    DescriptionComponent,
+    VerificationComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,

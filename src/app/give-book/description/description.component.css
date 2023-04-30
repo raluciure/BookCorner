@@ -1,0 +1,17 @@
+.select-img {
+
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+}
+
+.delete-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}

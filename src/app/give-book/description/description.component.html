@@ -1,0 +1,96 @@
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <h4>Purpose</h4>
+      <select class="form-select">
+        <option value="">Choose</option>
+        <option value="Sell">Sell</option>
+        <option value="Lend">Lend</option>
+      </select>
+    </div>
+
+    <div class="col">
+      <h4>Category</h4>
+      <select class="form-select">
+        <option value="">Choose</option>
+        <option value="Narrative">Narrative</option>
+        <option value="Academic">Academic</option>
+      </select>
+    </div>
+
+    <div class="col">
+      <h4>Condition</h4>
+      <select class="form-select">
+        <option value="">Choose</option>
+        <option value="As new">As new</option>
+        <option value="Good">Good</option>
+        <option value="Quite good">Quite good</option>
+        <option value="Damaged">Damaged</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <h4>Pictures {{imageFiles.length}}/3</h4>
+    <div class="d-flex flex-wrap">
+      <div class="select-img border border-1 me-2" *ngFor="let img of imagesSrc; let index = index;">
+        <img src="{{img}}" width="120" height="120"/>
+        <img role="button" (click)="removeImage(index)"  class="delete-icon" src="assets/delete.png" width="30"/>
+      </div>
+      <label role="button" class="select-img border border-1">
+        <img src="assets/camera_fill.png" width="50"/>
+        <strong>Add image</strong>
+        <input multiple (change)="selectImage($event)" hidden type="file" accept="image/*"/>
+      </label>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <h4>Title of the book</h4>
+    <input class="form-control" [(ngModel)]="title"/>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col">
+      <h4>Author</h4>
+      <input class="form-control"/>
+    </div>
+    <div class="col">
+      <h4>Edition</h4>
+      <input class="form-control"/>
+    </div>
+
+    <div class="col">
+      <h4>ISBN</h4>
+      <input class="form-control"/>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <h4>Summary of the book</h4>
+    <textarea class="form-control" ></textarea>
+  </div>
+
+  <h4 class="mt-4">Price</h4>
+  <div class="input-group">
+
+    <span class="input-group-text" id="basic-addon1">£</span>
+    <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+
+  <div class="mt-4">
+    <h4>Delivery method</h4>
+    <select class="form-select">
+      <option value="">Choose</option>
+      <option value="In person">In person</option>
+      <option value="Home delivery">Home delivery</option>
+    </select>
+  </div>
+
+  <div class="mt-3">
+    <button class="btn btn-primary">NEXT</button>
+  </div>
+
+</div>

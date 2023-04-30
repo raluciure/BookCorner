@@ -1,0 +1,22 @@
+<div class="container">
+  <button (click)="location.back()" class="btn btn-light">
+    <img src="assets/back.png" width="20"/>
+    Back To Home
+  </button>
+  <h1 class="text-center">Give a book</h1>
+  <div class="steps">
+    <div class="row">
+      <div class="col" *ngFor="let step of steps; let index = index">
+        <div class="step">
+          <div class="step-circle" [class.active]="step.number === stepIndex">{{step.number}}</div>
+          <div class="step-title">{{step.title}}</div>
+        </div>
+        <div *ngIf="index !== steps.length - 1" class="line"></div>
+      </div>
+    </div>
+  </div>
+
+  <app-description *ngIf="stepIndex === 1"></app-description>
+  <app-verification *ngIf="stepIndex === 2"></app-verification>
+  <app-confirmation *ngIf="stepIndex === 3"></app-confirmation>
+</div>
