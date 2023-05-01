@@ -7,6 +7,7 @@ import { BorrowPageComponent } from './borrow-page/borrow-page.component';
 import { BuyPageWithTitleComponent } from './buy-page-with-title/buy-page-with-title.component';
 import { BuyFilterResultsComponent } from './buy-filter-results/buy-filter-results.component';
 import { BorrowPageWithTitleComponent } from './borrow-page-with-title/borrow-page-with-title.component';
+import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-filter-results.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'borrow', component: BorrowPageComponent },
   { path: 'borrow-title', component: BorrowPageWithTitleComponent },
   { path: 'buy-filter-results', component: BuyFilterResultsComponent },
+  { path: 'borrow-filter-results', component: BorrowFilterResultsComponent },
   
 ];
 

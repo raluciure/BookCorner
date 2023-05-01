@@ -30,7 +30,7 @@
 
     <div class="results">
         <p class="text-results">Results</p>
-        <div class="filters" type="button">
+        <div class="filters" type="button" (click)="filterPress()">
             <p class="text-filter">Filters</p>
             <img class="filters-icon" src="assets\filters.svg" alt="filters icon">
         </div>
@@ -125,4 +125,10 @@
         <img type="button" class="heart-icon" src="assets\black-heart.svg" alt="add to favorites icon"
             (click)="toUnimplemented()">
     </div>
+
+    <div #filter class="filter-box">
+        <app-borrow-filters></app-borrow-filters>
+    </div>
+
+
 </div>
