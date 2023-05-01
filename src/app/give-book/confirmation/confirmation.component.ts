@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Location} from "@angular/common";
 
 @Component({
   selector: 'app-confirmation',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./confirmation.component.css']
 })
 export class ConfirmationComponent implements OnInit {
-
-  constructor() { }
+  @Output() onClose = new EventEmitter();
+  @Output() onSeeList = new EventEmitter();
+  constructor(
+    public location: Location
+  ) { }
 
   ngOnInit(): void {
   }

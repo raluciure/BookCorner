@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col" *ngFor="let step of steps; let index = index">
         <div class="step">
-          <div class="step-circle" [class.active]="step.number === stepIndex">{{step.number}}</div>
+          <div class="step-circle" [class.active]="step.number <= stepIndex">{{step.number}}</div>
           <div class="step-title">{{step.title}}</div>
         </div>
         <div *ngIf="index !== steps.length - 1" class="line"></div>
@@ -16,7 +16,16 @@
     </div>
   </div>
 
-  <app-description *ngIf="stepIndex === 1"></app-description>
-  <app-verification *ngIf="stepIndex === 2"></app-verification>
-  <app-confirmation *ngIf="stepIndex === 3"></app-confirmation>
+  <app-description
+    (onSubmit)="handleSubmitDescription($event)"
+    [hidden]="stepIndex !== 1"></app-description>
+  <app-verification
+    (onSubmit)="stepIndex = stepIndex + 1"
+    [data]="data"
+    (onEdit)="stepIndex = stepIndex - 1"
+    *ngIf="stepIndex === 2"></app-verification>
+  <app-confirmation
+    (onClose)="onClose()"
+    (onSeeList)="onSeeList()"
+    *ngIf="stepIndex === 3"></app-confirmation>
 </div>

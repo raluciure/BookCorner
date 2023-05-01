@@ -13,6 +13,7 @@ export class GiveBookComponent implements OnInit {
     { number: 3, title: 'Confirmation' }
   ];
   stepIndex = 1;
+  data: any;
   constructor(
     public location: Location
   ) { }
@@ -20,4 +21,17 @@ export class GiveBookComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClose() {
+    window.location.href = '/';
+  }
+
+  onSeeList() {
+    window.location.href = '/';
+  }
+
+  handleSubmitDescription(data: any) {
+    this.stepIndex = 2;
+    this.data = data;
+    console.log(data)
+  }
 }

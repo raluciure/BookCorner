@@ -7,8 +7,7 @@
 
     <nav class="padd-20">
         <ul>
-            <li class="menu-responsive__item pointer">Sell or lend book</li>
-            <li routerLink="/give-book" class="menu-responsive__item pointer">Give a book</li>
+            <li routerLink="/give-book" class="menu-responsive__item pointer">Sell or lend book</li>
             <li class="menu-responsive__item pointer" (click)="toUnimplemented()">Favorites</li>
             <li class="menu-responsive__item pointer" (click)="toUnimplemented()">Chat</li>
             <li class="menu-responsive__item pointer" (click)="toUnimplemented()">My profile</li>
@@ -22,16 +21,12 @@
     </div>
     <nav class="main-menu">
         <ul class="flex">
-            <li class="button-item">
+            <li  routerLink="/give-book"  class="button-item">
                 <button type="button">
                     Sell or lend a book
                 </button>
             </li>
-          <li routerLink="/give-book" class="button-item">
-            <button type="button">
-              Give a book
-            </button>
-          </li>
+
             <li class="main-menu__item pointer" (click)="toUnimplemented()">
                 <img class="icon" src="assets\chat.svg" alt="chat icon">
                 <p class="icon-text">Chat</p>

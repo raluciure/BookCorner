@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-description',
@@ -6,9 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./description.component.css']
 })
 export class DescriptionComponent implements OnInit {
+  @Output() onSubmit = new EventEmitter<any>;
   imageFiles: File[] = [];
   imagesSrc: string[] = [];
   title = '';
+  purpose = '';
+  category = '';
+  condition = '';
+  author = '';
+  edition = '';
+  isbn = '';
+  summary = '';
+  price = '';
+  deliveryMethod = '';
   constructor() { }
 
   ngOnInit(): void {
@@ -44,5 +54,22 @@ export class DescriptionComponent implements OnInit {
     this.imagesSrc = await Promise.all(images);
   }
 
+  submit(e: any) {
+    e.preventDefault();
+    this.onSubmit.emit({
+      imageFiles: this.imageFiles,
+      title: this.title,
+      purpose: this.purpose,
+      category: this.category,
+      condition: this.condition,
+      author: this.author,
+      edition: this.edition,
+      isbn: this.isbn,
+      summary: this.summary,
+      price: this.price,
+      deliveryMethod: this.deliveryMethod,
+      imagesSrc: this.imagesSrc
+    });
+  }
 
 }
