@@ -133,6 +133,31 @@ header {
     height: auto;
 }
 
+.icon-hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    height: auto;
+    margin-top: -25px;
+}
+
+.main-menu__item img:nth-child(2) {
+    visibility: hidden;
+}
+
+.main-menu__item:hover img:nth-child(1) {
+    visibility: hidden;
+}
+
+.main-menu__item:hover img:nth-child(2) {
+    visibility:visible;
+}
+
+.main-menu__item:hover p {
+    color: black;
+}
+
 .icon-text {
     font-size: 14px;
     text-align: center;
@@ -153,8 +178,9 @@ button {
 }
 
 button:hover {
-    background-color: #09205e;
+    background-color: white;
     transition: 0.3s;
+    color: black;
 }
 
 .button-item {
@@ -165,7 +191,7 @@ button:hover {
 }
 
 .main-menu__item:hover {
-    background-color: #09205e;
+    background-color: white;
     transition: 0.3s;
 }
 
