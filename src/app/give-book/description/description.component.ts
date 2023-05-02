@@ -56,6 +56,11 @@ export class DescriptionComponent implements OnInit {
 
   submit(e: any) {
     e.preventDefault();
+    if (this.imagesSrc.length < 2) {
+      alert("You must upload at least two photos.!");
+      return;
+    }
+
     this.onSubmit.emit({
       imageFiles: this.imageFiles,
       title: this.title,

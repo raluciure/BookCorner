@@ -21,7 +21,7 @@
 }
 
 .active {
-  background-color: #007bff;
+  background: #01001b;
 }
 
 .step-title {
@@ -39,4 +39,8 @@
   align-items: center;
 
 
+}
+
+.button {
+  background: #01001b;
 }

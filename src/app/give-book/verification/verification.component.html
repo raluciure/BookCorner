@@ -1,14 +1,14 @@
 <div *ngIf="!publish" class="container">
   <div  class="row">
     <div class="col-12 col-lg-6 position-relative">
-      <img src="assets/edit.png" width="50"
+      <img src="assets/edit.png" width="30"
            class="position-absolute"
            role="button"
            (click)="onEdit.emit()"
            style="right: 40px; top: 10px; z-index: 1000"/>
       <ngb-carousel [interval]="5000" [showNavigationArrows]="true" [showNavigationIndicators]="true">
         <ng-template ngbSlide *ngFor="let img of data?.imagesSrc">
-          <img src="{{img}}" alt="Slide 1">
+          <img width="100%" src="{{img}}" alt="Slide 1">
 
         </ng-template>
 
@@ -17,7 +17,7 @@
     <div class="col-12 col-lg-6">
       <h1>
         {{data?.title}}
-        <img  (click)="onEdit.emit()" src="assets/edit.png" width="50" role="button"/>
+        <img  (click)="onEdit.emit()" src="assets/edit.png" width="30" role="button"/>
       </h1>
       <h5>
         {{data?.category}}
@@ -25,14 +25,14 @@
       <p>£ {{data?.price}}</p>
       <p>
         <img  (click)="onEdit.emit()" src="assets/car.png" width="30" role="button"/>
-        Home Delivery
+          {{data?.deliveryMethod}}
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-12">
       <h2>Conditions
-        <img  (click)="onEdit.emit()" src="assets/edit.png" width="50" role="button"/>
+        <img  (click)="onEdit.emit()" src="assets/edit.png" width="30" role="button"/>
       </h2>
       <p>
         {{data?.condition}}
@@ -40,7 +40,7 @@
     </div>
     <div class="col-12">
       <h2>Summary
-        <img  (click)="onEdit.emit()" src="assets/edit.png" width="50" role="button"/>
+        <img  (click)="onEdit.emit()" src="assets/edit.png" width="30" role="button"/>
       </h2>
       <p>
         {{data?.summary}}
@@ -49,7 +49,7 @@
   </div>
 
   <div class="text-center mt-4">
-    <button (click)="publish = true" class="btn btn-primary btn-lg">Publish</button>
+    <button (click)="publish = true" class="btn btn-dark btn-lg">Publish</button>
   </div>
 </div>
 
@@ -67,6 +67,6 @@
   </h5>
 
   <div class="text-center">
-    <button class="mt-4 btn btn-primary btn-lg" (click)="onSubmit.emit()">NEXT</button>
+    <button class="mt-4 btn btn-dark btn-lg" (click)="onSubmit.emit()">NEXT</button>
   </div>
 </div>
