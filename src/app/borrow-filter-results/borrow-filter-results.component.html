@@ -1,0 +1,74 @@
+<div class="container">
+    <form #bookForm="ngForm" class="form">
+        <div class="form-group">
+            <label>Title</label>
+            <input appHighlight class="form-control" type="text" placeholder="Picture of Dorian Gray" disabled>
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select class="form-select" aria-label="Category select" placeholder="Category" disabled>
+                <option value="" disabled hidden>Category</option>
+                <option value="Academic">Academic</option>
+                <option value="Narrative" selected>Narrative</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Purpose</label>
+            <select class="form-select" aria-label="Category select" placeholder="Purpose" disabled>
+                <option value="" disabled hidden>Purpose</option>
+                <option value="Borrow" selected>Borrow</option>
+                <option value="Buy">Buy</option>
+            </select>
+        </div>
+
+        <div class="form-group" aria-disabled="true">
+            <img class="icon" src="assets\search.svg" alt="start search button">
+        </div>
+    </form>
+
+    <div class="results">
+        <p class="text-results">1 result found</p>
+        <div class="filters">
+            <div class="filter-delivery">
+                <p class="text-filter">Available now</p>
+                <img class="filters-icon" src="assets\close-bold.svg" alt="close icon">
+            </div>
+            <div class="filter">
+                <p class="text-filter">2 weeks</p>
+                <img class="filters-icon" src="assets\close-bold.svg" alt="close icon">
+            </div>
+            <div class="filter-delivery">
+                <p class="text-filter">Home delivery</p>
+                <img class="filters-icon" src="assets\close-bold.svg" alt="close icon">
+            </div>
+            <img class="filters-icon" src="assets\filters.svg" alt="filters icon">
+        </div>
+    </div>
+
+    <div class="book-card">
+        <img class="book-img" src="assets\gray2.jpg" alt="The image for 'Diary of a Wimpy kid'">
+        <div class="book-details">
+            <p class="title"><b>The Picture of Dorian Gray</b></p>
+            <p class="price">€for free</p>
+            <div class="delivery-details">
+                <img class="delivery-icon" src="assets\delivery.svg" alt="home delivery icon">
+                <p class="delivery-text">home delivery</p>
+            </div>
+            <p class="period-text">Lending period: 1 week or more</p>
+            <div class="av-now">
+                <p class="availability">Available now</p>
+            </div>
+            <div class="lending">
+                <p class="lending-text">Lending period extendible</p>
+            </div>
+        </div>
+        <div>
+            <p class="condition">As new</p>
+        </div>
+        <img type="button" class="heart-icon2" src="assets\black-heart.svg" alt="add to favorites icon"
+            (click)="toUnimplemented()">
+    </div>
+
+</div>

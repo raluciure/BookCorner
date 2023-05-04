@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class BorrowPageComponent implements OnInit {
 
+  @ViewChild('filter') el:ElementRef;
   constructor(
     private router: Router) { }
 
@@ -18,5 +19,8 @@ export class BorrowPageComponent implements OnInit {
     this.router.navigate([`/unimplemented`]);
   } 
 
+  filterPress() {
+    this.el.nativeElement.style.visibility = "visible";
+  }
 
 }
