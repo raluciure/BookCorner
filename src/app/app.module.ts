@@ -16,10 +16,14 @@ import { BuyFiltersComponent } from './buy-filters/buy-filters.component';
 import { BorrowFiltersComponent } from './borrow-filters/borrow-filters.component';
 import { BuyFilterResultsComponent } from './buy-filter-results/buy-filter-results.component';
 import { BorrowPageWithTitleComponent } from './borrow-page-with-title/borrow-page-with-title.component';
+<<<<<<< HEAD
 import { GiveBookComponent } from './give-book/give-book.component';
 import { DescriptionComponent } from './give-book/description/description.component';
 import { VerificationComponent } from './give-book/verification/verification.component';
 import { ConfirmationComponent } from './give-book/confirmation/confirmation.component';
+=======
+import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-filter-results.component';
+>>>>>>> b7ccd124ba91f5d3032626c61d5976d39605ff71
 
 @NgModule({
   declarations: [
@@ -34,10 +38,14 @@ import { ConfirmationComponent } from './give-book/confirmation/confirmation.com
     BorrowFiltersComponent,
     BuyFilterResultsComponent,
     BorrowPageWithTitleComponent,
+<<<<<<< HEAD
     GiveBookComponent,
     DescriptionComponent,
     VerificationComponent,
     ConfirmationComponent
+=======
+    BorrowFilterResultsComponent
+>>>>>>> b7ccd124ba91f5d3032626c61d5976d39605ff71
   ],
   imports: [
     BrowserModule,

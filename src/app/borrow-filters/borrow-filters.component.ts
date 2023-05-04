@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-borrow-filters',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BorrowFiltersComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router) {
+  }
 
   ngOnInit(): void {
+  }
+
+  closeFilter() {
+    location.reload();
+  }
+
+  saveFilter() {
+    this.router.navigate([`/borrow-filter-results`]);
   }
 
 }
