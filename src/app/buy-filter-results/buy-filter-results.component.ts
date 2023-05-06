@@ -20,4 +20,8 @@ export class BuyFilterResultsComponent implements OnInit {
     this.router.navigate([`/unimplemented`]);
   } 
 
+  toBuyBook() {
+    this.router.navigate([`/buy-book-details`]);
+  } 
+
 }

@@ -9,6 +9,8 @@ import { BuyFilterResultsComponent } from './buy-filter-results/buy-filter-resul
 import { BorrowPageWithTitleComponent } from './borrow-page-with-title/borrow-page-with-title.component';
 import {GiveBookComponent} from "./give-book/give-book.component";
 import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-filter-results.component';
+import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-details.component';
+import { BuyBookDetailsComponent } from './buy-book-details/buy-book-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -21,6 +23,8 @@ const routes: Routes = [
   { path: 'buy-filter-results', component: BuyFilterResultsComponent },
   { path: 'give-book', component: GiveBookComponent },
   { path: 'borrow-filter-results', component: BorrowFilterResultsComponent },
+  { path: 'borrow-book-details', component: BorrowBookDetailsComponent },
+  { path: 'buy-book-details', component: BuyBookDetailsComponent },
   
 ];
 

@@ -18,4 +18,8 @@ export class BorrowFilterResultsComponent implements OnInit {
     this.router.navigate([`/unimplemented`]);
   }
 
+  toBorrowBook() {
+    this.router.navigate([`/borrow-book-details`]);
+  }
+
 }

@@ -21,6 +21,8 @@ import { DescriptionComponent } from './give-book/description/description.compon
 import { VerificationComponent } from './give-book/verification/verification.component';
 import { ConfirmationComponent } from './give-book/confirmation/confirmation.component';
 import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-filter-results.component';
+import { BuyBookDetailsComponent } from './buy-book-details/buy-book-details.component';
+import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-details.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-fil
     DescriptionComponent,
     VerificationComponent,
     ConfirmationComponent,
-    BorrowFilterResultsComponent
+    BorrowFilterResultsComponent,
+    BuyBookDetailsComponent,
+    BorrowBookDetailsComponent
   ],
   imports: [
     BrowserModule,
