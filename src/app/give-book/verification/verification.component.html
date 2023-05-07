@@ -1,14 +1,14 @@
 <div *ngIf="!publish" class="container">
   <div  class="row">
     <div class="col-12 col-lg-6 position-relative">
-      <img src="assets/edit.png" width="30"
+      <img src="assets/edit.png" width="20"
            class="position-absolute"
            role="button"
            (click)="onEdit.emit()"
            style="right: 40px; top: 10px; z-index: 1000"/>
       <ngb-carousel [interval]="5000" [showNavigationArrows]="true" [showNavigationIndicators]="true">
         <ng-template ngbSlide *ngFor="let img of data?.imagesSrc">
-          <img style="max-height: 100%" src="{{img}}" alt="Slide 1">
+          <img style="max-height: 100%; width: 300px" src="{{img}}" alt="Slide 1">
 
         </ng-template>
 

@@ -44,3 +44,8 @@
 .button {
   background: #01001b;
 }
+
+.container {
+  font-family: monospace;
+  font-size: 18px;
+}
