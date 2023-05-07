@@ -23,6 +23,7 @@ import { ConfirmationComponent } from './give-book/confirmation/confirmation.com
 import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-filter-results.component';
 import { BuyBookDetailsComponent } from './buy-book-details/buy-book-details.component';
 import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-details.component';
+import { BuyProcessGeneralInfoComponent } from './buy-process-general-info/buy-process-general-info.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-de
     ConfirmationComponent,
     BorrowFilterResultsComponent,
     BuyBookDetailsComponent,
-    BorrowBookDetailsComponent
+    BorrowBookDetailsComponent,
+    BuyProcessGeneralInfoComponent
   ],
   imports: [
     BrowserModule,
