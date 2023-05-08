@@ -27,42 +27,6 @@ button {
     margin-bottom: 10px;
 }
 
-.stating {
-    font-family: monospace;
-    font-size: 28px;
-    align-self: center;
-    margin-top: 20px;
-}
-
-.stating2 {
-    font-family: monospace;
-    font-size: 28px;
-    align-self: center;
-    margin-top: -15px;
-}
-
-.text {
-    font-family: monospace;
-    font-size: 16px;
-    align-self: center;
-    margin-top: -10px;
-}
-
-.text-price {
-    font-family: monospace;
-    font-size: 16px;
-    align-self: center;
-    margin-top: 20px;
-}
-
-.book-img {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    align-self: center;
-}
-
 .step {
     display: flex;
     flex-direction: column;
@@ -122,6 +86,41 @@ button {
     margin-left: 120px;
 }
 
+.success-img {
+    width: 45px;
+}
 
+.text-title {
+    display: flex;
+    align-self: center;
+    font-family: monospace;
+    font-size: 28px;
+    margin-top: 40px;
+}
 
-  
+.smile-img {
+    width: 70px;
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    align-self: center;
+    font-family: monospace;
+    font-size: 22px;
+}
+.text1 {
+    display: flex;
+    align-self: center;
+    font-family: monospace;
+    font-size: 22px;
+    margin-top: -10px;
+}
+
+.buttons {
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+}

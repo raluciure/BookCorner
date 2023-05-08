@@ -11,6 +11,11 @@ import {GiveBookComponent} from "./give-book/give-book.component";
 import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-filter-results.component';
 import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-details.component';
 import { BuyBookDetailsComponent } from './buy-book-details/buy-book-details.component';
+import { BuyProcessGeneralInfoComponent } from './buy-process-general-info/buy-process-general-info.component';
+import { BuyProcessPersonalDataComponent } from './buy-process-personal-data/buy-process-personal-data.component';
+import { BuyProcessPaymentComponent } from './buy-process-payment/buy-process-payment.component';
+import { BuyProcessConfirmationComponent } from './buy-process-confirmation/buy-process-confirmation.component';
+import { BuyProcessSuccessComponent } from './buy-process-success/buy-process-success.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -25,6 +30,11 @@ const routes: Routes = [
   { path: 'borrow-filter-results', component: BorrowFilterResultsComponent },
   { path: 'borrow-book-details', component: BorrowBookDetailsComponent },
   { path: 'buy-book-details', component: BuyBookDetailsComponent },
+  { path: 'buy-general-info', component: BuyProcessGeneralInfoComponent },
+  { path: 'buy-personal-data', component: BuyProcessPersonalDataComponent },
+  { path: 'buy-payment', component: BuyProcessPaymentComponent },
+  { path: 'buy-confirmation', component: BuyProcessConfirmationComponent },
+  { path: 'buy-success', component: BuyProcessSuccessComponent },
   
 ];
 

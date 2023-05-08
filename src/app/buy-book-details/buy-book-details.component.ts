@@ -18,4 +18,8 @@ export class BuyBookDetailsComponent implements OnInit {
     this.router.navigate([`/unimplemented`]);
   }
 
+  toGeneralInfo() {
+    this.router.navigate([`/buy-general-info`]);
+  }
+
 }

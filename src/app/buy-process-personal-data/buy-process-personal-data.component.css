@@ -25,42 +25,7 @@ button {
     font-size: 16px;
     align-self: center;
     margin-bottom: 10px;
-}
-
-.stating {
-    font-family: monospace;
-    font-size: 28px;
-    align-self: center;
-    margin-top: 20px;
-}
-
-.stating2 {
-    font-family: monospace;
-    font-size: 28px;
-    align-self: center;
-    margin-top: -15px;
-}
-
-.text {
-    font-family: monospace;
-    font-size: 16px;
-    align-self: center;
-    margin-top: -10px;
-}
-
-.text-price {
-    font-family: monospace;
-    font-size: 16px;
-    align-self: center;
-    margin-top: 20px;
-}
-
-.book-img {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    align-self: center;
+    margin-top: 40px;
 }
 
 .step {
@@ -122,6 +87,22 @@ button {
     margin-left: 120px;
 }
 
+.group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+#field {
+    width: 620px;
+}
 
-  
+label {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}

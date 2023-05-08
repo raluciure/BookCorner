@@ -1,1 +1,33 @@
-<p>buy-process-general-info works!</p>
+<div class="container">
+    <button (click)="location.back()" class="btn btn-light">
+        <img src="assets/back.png" width="18" />
+        Back to detail page
+    </button>
+
+    <div class="steps">
+        <div class="row">
+          <div class="col" *ngFor="let step of steps; let index = index">
+            <div class="step">
+                <div class="circle-group">
+                    <div class="step-circle" [class.active]="step.number == 1">{{step.number}}</div>
+                </div>
+              <div class="step-title">{{step.title}}</div>
+            </div>
+            <div *ngIf="index !== steps.length - 1" class="square"></div>
+          </div>
+        </div>
+      </div>
+
+    <p class="stating"><b>You are buying</b></p>
+    <p class="stating2">"Diary of a Wimpy Kid"</p>
+
+    <img class="book-img" src="assets\diary2.jpg" alt="The image for 'Diary of a Wimpy kid'">
+
+    <p class="text-price"><b>Price:</b> €8</p>
+    <p class="text"><b>Delivery method:</b> home delivery within 48h</p>
+
+    <button (click)="toNext()" class="btn btn-light" id="chat-btn">
+        Next
+    </button>
+
+</div>

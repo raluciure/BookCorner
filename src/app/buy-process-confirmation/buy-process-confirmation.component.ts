@@ -3,11 +3,11 @@ import { Location } from "@angular/common";
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-buy-process-general-info',
-  templateUrl: './buy-process-general-info.component.html',
-  styleUrls: ['./buy-process-general-info.component.css']
+  selector: 'app-buy-process-confirmation',
+  templateUrl: './buy-process-confirmation.component.html',
+  styleUrls: ['./buy-process-confirmation.component.css']
 })
-export class BuyProcessGeneralInfoComponent implements OnInit {
+export class BuyProcessConfirmationComponent implements OnInit {
 
   steps = [
     { number: 1, title: 'General info' },
@@ -23,7 +23,6 @@ export class BuyProcessGeneralInfoComponent implements OnInit {
   }
 
   toNext() {
-    this.router.navigate([`/buy-personal-data`]);
+    this.router.navigate([`/buy-success`]);
   }
-
 }

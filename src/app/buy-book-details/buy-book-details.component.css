@@ -10,8 +10,8 @@ button {
     align-items: center;
     font-size: 14px;
     margin-top: 10px;
-    background: #01001b;
-    color: white;
+    border: 2px solid #01001b;
+    /* color: white; */
 }
 
 .category {
@@ -21,7 +21,7 @@ button {
 }
 
 .text {
-    font-size: 18px;
+    font-size: 16px;
     font-family: monospace;
     margin-top: -15px;
     /* width: 1000px; */
@@ -92,8 +92,55 @@ button {
 
 .reviewer {
     margin-top: -15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewer1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewer-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.name {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.star-rating1 {
+    width: 10px;
+    margin-right: 2px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
 }
 
 .user-profile {
     width:50px;
+}
+
+.stating {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-left: 50%;
+}
+
+#chat-btn {
+    background-color: #01001b;
+    color: white;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 16px;
 }

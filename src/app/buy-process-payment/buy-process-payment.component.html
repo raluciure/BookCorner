@@ -1,0 +1,61 @@
+<div class="container">
+    <button (click)="location.back()" class="btn btn-light">
+        <img src="assets/back.png" width="18" />
+        Back to detail page
+    </button>
+
+    <div class="steps">
+        <div class="row">
+            <div class="col" *ngFor="let step of steps; let index = index">
+                <div class="step">
+                    <div class="circle-group">
+                        <div class="step-circle" [class.active]="step.number == 3">{{step.number}}</div>
+                    </div>
+                    <div class="step-title">{{step.title}}</div>
+                </div>
+                <div *ngIf="index !== steps.length - 1" class="square"></div>
+            </div>
+        </div>
+    </div>
+
+    <p class="stating"><b>Total amount</b></p>
+    <p class="stating2">€8</p>
+
+    <form #dataForm="ngForm" class="form" name="myForm">
+        <div class="group">
+            <div class="form-group" id="field">
+                <label>Name</label>
+                <input appHighlight class="form-control" type="text" required>
+            </div>
+            <div class="form-group" id="field">
+                <label>Surname</label>
+                <input appHighlight class="form-control" type="text" required>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="form-group" id="card">
+                <label>Card number</label>
+                <input appHighlight class="form-control" type="text" required>
+            </div>
+            <div class="form-group" id="cvv">
+                <label>CVV</label>
+                <input appHighlight class="form-control" type="text" required>
+            </div>
+        </div>
+
+        <div class="group2">
+            <div class="form-group">
+                <img class="card-img" src="assets\cards.png" alt="Accepted cards">
+            </div>
+            <div class="form-group" id="cvv">
+                <label>Expiry date</label>
+                <input appHighlight class="form-control" type="text" required placeholder="MM/YY">
+            </div>
+        </div>
+    </form>
+
+    <button (click)="toNext()" class="btn btn-light" id="chat-btn">
+        Pay
+    </button>
+</div>

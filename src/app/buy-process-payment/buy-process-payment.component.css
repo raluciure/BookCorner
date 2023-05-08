@@ -27,42 +27,6 @@ button {
     margin-bottom: 10px;
 }
 
-.stating {
-    font-family: monospace;
-    font-size: 28px;
-    align-self: center;
-    margin-top: 20px;
-}
-
-.stating2 {
-    font-family: monospace;
-    font-size: 28px;
-    align-self: center;
-    margin-top: -15px;
-}
-
-.text {
-    font-family: monospace;
-    font-size: 16px;
-    align-self: center;
-    margin-top: -10px;
-}
-
-.text-price {
-    font-family: monospace;
-    font-size: 16px;
-    align-self: center;
-    margin-top: 20px;
-}
-
-.book-img {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    align-self: center;
-}
-
 .step {
     display: flex;
     flex-direction: column;
@@ -122,6 +86,59 @@ button {
     margin-left: 120px;
 }
 
+.stating {
+    font-family: monospace;
+    font-size: 28px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.stating2 {
+    font-family: monospace;
+    font-size: 28px;
+    align-self: center;
+    margin-top: -15px;
+}
+
+#field {
+    width: 620px;
+}
+
+#card {
+    width: 1020px;
+}
+
+#cvv {
+    width: 220px;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.card-img {
+    width: 600px;
+    margin-left: -105px;
+}
+
+.group2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+}
 
 
-  

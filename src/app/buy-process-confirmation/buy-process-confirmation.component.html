@@ -1,0 +1,36 @@
+<div class="container">
+    <button (click)="location.back()" class="btn btn-light">
+        <img src="assets/back.png" width="18" />
+        Back to detail page
+    </button>
+
+    <div class="steps">
+        <div class="row">
+            <div class="col" *ngFor="let step of steps; let index = index">
+                <div class="step">
+                    <div class="circle-group">
+                        <div class="step-circle" [class.active]="step.number == 4">{{step.number}}</div>
+                    </div>
+                    <div class="step-title">{{step.title}}</div>
+                </div>
+                <div *ngIf="index !== steps.length - 1" class="square"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirmation">
+        <p><b>Title:</b> Diary of a Wimpy Kid</p>
+        <p><b>To:</b> Alberto Lopez</p>
+        <p><b>Address:</b> Calle Monteprincipe 2, 2041, Madrid</p>
+        <p><b>Phone number:</b> 46293903478</p>
+        <p><b>Email:</b> alopez@gmail.com</p>
+        <p><b>Price:</b> 8€</p>
+        <p><b>Delivery method:</b> shipping within 48h</p>
+        <p><b>Payment method:</b>  ********567</p>
+        <p><b>Estimated arrival date:</b> 24 May 2023</p>
+    </div>
+
+    <button (click)="toNext()" class="btn btn-light" id="chat-btn">
+        Confirm
+    </button>
+</div>

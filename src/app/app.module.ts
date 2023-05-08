@@ -24,6 +24,10 @@ import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-fil
 import { BuyBookDetailsComponent } from './buy-book-details/buy-book-details.component';
 import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-details.component';
 import { BuyProcessGeneralInfoComponent } from './buy-process-general-info/buy-process-general-info.component';
+import { BuyProcessPersonalDataComponent } from './buy-process-personal-data/buy-process-personal-data.component';
+import { BuyProcessPaymentComponent } from './buy-process-payment/buy-process-payment.component';
+import { BuyProcessConfirmationComponent } from './buy-process-confirmation/buy-process-confirmation.component';
+import { BuyProcessSuccessComponent } from './buy-process-success/buy-process-success.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,11 @@ import { BuyProcessGeneralInfoComponent } from './buy-process-general-info/buy-p
     BorrowFilterResultsComponent,
     BuyBookDetailsComponent,
     BorrowBookDetailsComponent,
-    BuyProcessGeneralInfoComponent
+    BuyProcessGeneralInfoComponent,
+    BuyProcessPersonalDataComponent,
+    BuyProcessPaymentComponent,
+    BuyProcessConfirmationComponent,
+    BuyProcessSuccessComponent
   ],
   imports: [
     BrowserModule,
