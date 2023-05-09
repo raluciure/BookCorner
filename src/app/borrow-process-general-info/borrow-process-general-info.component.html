@@ -1,0 +1,42 @@
+<div class="container">
+    <button (click)="location.back()" class="btn btn-light">
+        <img src="assets/back.png" width="18" />
+        Back to detail page
+    </button>
+
+    <div class="steps">
+        <div class="row">
+            <div class="col" *ngFor="let step of steps; let index = index">
+                <div class="step">
+                    <div class="circle-group">
+                        <div class="step-circle" [class.active]="step.number == 1">{{step.number}}</div>
+                    </div>
+                    <div class="step-title">{{step.title}}</div>
+                </div>
+                <div *ngIf="index !== steps.length - 1" class="square"></div>
+            </div>
+        </div>
+    </div>
+
+    <p class="stating"><b>You are borrowing</b></p>
+    <p class="stating2">"Picture of Dorian Gray"</p>
+
+    <img class="book-img" src="assets\gray2.jpg" alt="The image for 'Picture of Dorian Gray'">
+
+    <p class="text-price"><b>Price:</b> for free</p>
+    <p class="text"><b>Delivery method:</b> home delivery within 48h</p>
+    <div class="lending">
+        <label><b>Lending period:</b></label>
+        <select class="form-select" aria-label="period select">
+            <option value="1 week" selected>1 week</option>
+            <option value="2 weeks">2 weeks</option>
+            <option value="3 weeks">3 weeks</option>
+        </select>
+    </div>
+
+
+    <button (click)="toNext()" class="btn btn-light" id="chat-btn">
+        Next
+    </button>
+
+</div>

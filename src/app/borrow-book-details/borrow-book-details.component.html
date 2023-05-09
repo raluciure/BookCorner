@@ -1,1 +1,89 @@
-<p>borrow-book-details works!</p>
+<div class="container">
+    <button (click)="location.back()" class="btn btn-light">
+        <img src="assets/back.png" width="18" />
+        Back to research
+    </button>
+    <p class="category">Narrative / Borrow / Picture of Dorian Gray</p>
+    <div class="details">
+        <img class="book-img" src="assets\gray2.jpg" alt="The image for 'Picture of Dorian Gray'">
+        <div>
+            <p class="title"><b>Picture of Dorian Gray</b></p>
+            <div class="reviews">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-1.svg" alt="rating star'">
+                <p class="reviews-text" type="button" (click)="toUnimplemented()"><u>2 reviews</u></p>
+            </div>
+            <div class="price">
+                <p class="price-text">€For free</p>
+            </div>
+            <div class="delivery">
+                <img class="delivery-icon" src="assets\delivery.svg" alt="delivery icon'">
+                <p class="price-text">home delivery</p>
+            </div>
+            <div class="price">
+                <p class="price-text">Lending period: 1 week or more</p>
+            </div>
+        </div>
+    </div>
+    <div class="conditions">
+        <p class="category"><b>Conditions</b></p>
+        <p class="text">As new - very good conditions</p>
+    </div>
+
+    <div class="summary">
+        <p class="category"><b>Summary</b></p>
+        <p class="text">"The Picture of Dorian Gray" is a novel about a young man named Dorian Gray who becomes obsessed with
+            beauty. He sells his soul to remain forever beautiful, but his portrait ages with his sins. He tries to stop but fails,
+            destroying the portrait and dying aged and ugly while it returns to its original state.</p>
+    </div>
+
+    <div class="delivery-method">
+        <p class="category"><b>Delivery method and price</b></p>
+        <p class="text">Delivery: for free</p>
+        <p class="text">Restitution: included in delivery</p>
+    </div>
+
+    <div class="seller">
+        <p class="category"><b>About the seller</b></p>
+        <div class="reviewer">
+            <img class="user-profile" src="assets\user-square.svg" alt="user profile">
+            <div class="reviewer-details">
+                <p class="name">Cristina Sol</p>
+                <div class="stars">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-1.svg" alt="rating star'">
+                </div>
+            </div>
+        </div>
+        <p class="stating">Super nice, I got the chance to renew the borrowing easily and for the time needed.</p>
+
+        <div class="reviewer1">
+            <img class="user-profile" src="assets\user-square.svg" alt="user profile">
+            <div class="reviewer-details">
+                <p class="name">Luca Greg</p>
+                <div class="stars">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-1.svg" alt="rating star'">
+                </div>
+            </div>
+        </div>
+        <p class="stating">Perfect conditions of the book, very fast delivery.</p>
+    </div>
+    <div class="buttons">
+        <button (click)="toUnimplemented()" class="btn btn-light" id="chat-btn">
+            <img src="assets/chat.svg" width="22" />
+        </button>
+        <button (click)="toGeneralInfo()" class="btn btn-light" id="chat-btn">
+            Borrow
+        </button>
+    </div>
+</div>

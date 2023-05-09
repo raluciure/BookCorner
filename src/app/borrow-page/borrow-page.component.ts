@@ -23,4 +23,8 @@ export class BorrowPageComponent implements OnInit {
     this.el.nativeElement.style.visibility = "visible";
   }
 
+  saveFilter() {
+    this.router.navigate([`/borrow-book-details`]);
+  }
+
 }

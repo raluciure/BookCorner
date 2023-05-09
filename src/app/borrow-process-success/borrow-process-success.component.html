@@ -1,0 +1,35 @@
+<div class="container">
+    <button (click)="location.back()" class="btn btn-light">
+        <img src="assets/back.png" width="18" />
+        Back to detail page
+    </button>
+
+    <div class="steps">
+        <div class="row">
+            <div class="col" *ngFor="let step of steps; let index = index">
+                <div class="step">
+                    <div class="circle-group">
+                        <img class="success-img" src="assets\success.svg" alt="completed step">
+                    </div>
+                    <div class="step-title">{{step.title}}</div>
+                </div>
+                <div *ngIf="index !== steps.length - 1" class="square"></div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-title"><b>Your order has successfully been received</b></p>
+    <img class="smile-img" src="assets\smile.png" alt="Smile icon">
+    <p class="text">You will receive an email with the</p>
+    <p class="text1">estimated arrival day and the</p>
+    <p class="text1">tracking!</p>
+
+    <div class="buttons">
+        <button (click)="toMain()" class="btn btn-light" id="chat-btn">
+            Close
+        </button>
+        <button (click)="toUnimplemented()" class="btn btn-light" id="chat-btn">
+            See order
+        </button>
+    </div>
+</div>

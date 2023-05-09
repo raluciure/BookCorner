@@ -48,6 +48,11 @@ button {
     align-content: center;
     width: 70px;
     align-self: center;
+    margin-bottom: 10px;
+    background-color: #01001b;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
 }
 
 .icon {
