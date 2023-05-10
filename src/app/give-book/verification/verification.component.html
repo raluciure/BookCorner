@@ -6,9 +6,11 @@
            role="button"
            (click)="onEdit.emit()"
            style="right: 40px; top: 10px; z-index: 1000"/>
-      <ngb-carousel [interval]="5000" [showNavigationArrows]="true" [showNavigationIndicators]="true">
-        <ng-template ngbSlide *ngFor="let img of data?.imagesSrc">
-          <img style="max-height: 100%; width: 200px" src="{{img}}" alt="Slide 1">
+      <ngb-carousel style="background: #01001b" [interval]="5000" [showNavigationArrows]="true" [showNavigationIndicators]="true">
+        <ng-template  ngbSlide *ngFor="let img of data?.imagesSrc">
+          <div class="d-flex">
+            <img class="m-auto" style="max-height: 100%; width: 200px" src="{{img}}" alt="Slide 1">
+          </div>
 
         </ng-template>
 
