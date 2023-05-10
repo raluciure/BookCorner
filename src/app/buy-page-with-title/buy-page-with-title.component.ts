@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class BuyPageWithTitleComponent implements OnInit {
 
-  @ViewChild('filter') el:ElementRef;
+  @ViewChild('filter') el: ElementRef;
   constructor(
     private router: Router) { }
 
@@ -17,17 +17,21 @@ export class BuyPageWithTitleComponent implements OnInit {
 
   toUnimplemented() {
     this.router.navigate([`/unimplemented`]);
-  } 
+  }
 
   goToBuy() {
     const inputElement = document.getElementById('purpose') as HTMLInputElement;
-    if(inputElement.value == "Buy") {
+    if (inputElement.value == "Buy") {
       this.router.navigate([`/buy`]);
     }
   }
 
   filterPress() {
     this.el.nativeElement.style.visibility = "visible";
+  }
+
+  saveFilter() {
+    this.router.navigate([`/buy-book-details`]);
   }
 
 }

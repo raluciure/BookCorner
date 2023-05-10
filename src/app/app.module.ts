@@ -23,6 +23,15 @@ import { ConfirmationComponent } from './give-book/confirmation/confirmation.com
 import { BorrowFilterResultsComponent } from './borrow-filter-results/borrow-filter-results.component';
 import { BuyBookDetailsComponent } from './buy-book-details/buy-book-details.component';
 import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-details.component';
+import { BuyProcessGeneralInfoComponent } from './buy-process-general-info/buy-process-general-info.component';
+import { BuyProcessPersonalDataComponent } from './buy-process-personal-data/buy-process-personal-data.component';
+import { BuyProcessPaymentComponent } from './buy-process-payment/buy-process-payment.component';
+import { BuyProcessConfirmationComponent } from './buy-process-confirmation/buy-process-confirmation.component';
+import { BuyProcessSuccessComponent } from './buy-process-success/buy-process-success.component';
+import { BorrowProcessGeneralInfoComponent } from './borrow-process-general-info/borrow-process-general-info.component';
+import { BorrowProcessPersonalDataComponent } from './borrow-process-personal-data/borrow-process-personal-data.component';
+import { BorrowProcessConfirmationComponent } from './borrow-process-confirmation/borrow-process-confirmation.component';
+import { BorrowProcessSuccessComponent } from './borrow-process-success/borrow-process-success.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +52,16 @@ import { BorrowBookDetailsComponent } from './borrow-book-details/borrow-book-de
     ConfirmationComponent,
     BorrowFilterResultsComponent,
     BuyBookDetailsComponent,
-    BorrowBookDetailsComponent
+    BorrowBookDetailsComponent,
+    BuyProcessGeneralInfoComponent,
+    BuyProcessPersonalDataComponent,
+    BuyProcessPaymentComponent,
+    BuyProcessConfirmationComponent,
+    BuyProcessSuccessComponent,
+    BorrowProcessGeneralInfoComponent,
+    BorrowProcessPersonalDataComponent,
+    BorrowProcessConfirmationComponent,
+    BorrowProcessSuccessComponent
   ],
   imports: [
     BrowserModule,

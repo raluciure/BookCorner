@@ -26,4 +26,8 @@ export class BuyPageComponent implements OnInit {
     this.el.nativeElement.style.visibility = "visible";
   }
 
+  saveFilter() {
+    this.router.navigate([`/buy-book-details`]);
+  }
+
 }

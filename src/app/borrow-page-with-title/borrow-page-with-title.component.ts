@@ -24,4 +24,8 @@ export class BorrowPageWithTitleComponent implements OnInit {
       this.router.navigate([`/borrow`]);
     }
   }
+
+  saveFilter() {
+    this.router.navigate([`/borrow-book-details`]);
+  }
 }

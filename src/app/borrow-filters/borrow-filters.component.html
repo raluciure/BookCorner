@@ -32,8 +32,14 @@
     <div class="price-range">
         <input type="checkbox" id="3-weeks" name="3-weeks">
         <label class="checkbox-text" for="3-weeks">3 weeks</label>
-        <input type="checkbox" id="extendible" name="extendible">
-        <label class="checkbox-text" for="extendible">Extendible</label>
+    </div>
+    <hr class="solid">
+    <label class="text"><b>Lending extendible</b></label>
+    <div class="price-range">
+        <input type="checkbox" id="yes" name="yes">
+        <label class="checkbox-text" for="yes">Yes</label>
+        <input type="checkbox" id="no" name="no">
+        <label class="checkbox-text" for="no">No</label>
     </div>
     <hr class="solid">
     <label class="text"><b>Conditions</b></label>
@@ -59,5 +65,5 @@
         <input type="checkbox" id="personal-delivery" name="personal-delivery">
         <label class="checkbox-text" for="personal-delivery">In person exchange</label>
     </div>
-    <button class="btn btn-primary" (click)="saveFilter()">Save</button>
+    <button class="btn btn-light" (click)="saveFilter()">Save</button>
 </div>

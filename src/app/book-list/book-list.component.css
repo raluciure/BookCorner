@@ -24,6 +24,7 @@
     align-items: center;
 }
 
+
 select:required:invalid {
     color: #666;
 }

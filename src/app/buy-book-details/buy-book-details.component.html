@@ -1,4 +1,86 @@
 <div class="container">
-    <button>Back to research</button>
+    <button (click)="location.back()" class="btn btn-light">
+        <img src="assets/back.png" width="18" />
+        Back to research
+    </button>
     <p class="category">Narrative / Buy / Diary of a Wimpy Kid</p>
+    <div class="details">
+        <img class="book-img" src="assets\diary2.jpg" alt="The image for 'Diary of a Wimpy kid'">
+        <div>
+            <p class="title"><b>Diary of a Wimpy Kid</b></p>
+            <div class="reviews">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-2.svg" alt="rating star'">
+                <img class="star-rating" src="assets\star-1.svg" alt="rating star'">
+                <p class="reviews-text" type="button" (click)="toUnimplemented()"><u>2 reviews</u></p>
+            </div>
+            <div class="price">
+                <p class="price-text">€8 sold by</p>
+                <img class="user" src="assets\black-profile.svg" alt="user icon'">
+                <p class="username" type="button" (click)="toUnimplemented()"><u>Irene Sanchez</u></p>
+            </div>
+            <div class="delivery">
+                <img class="delivery-icon" src="assets\delivery.svg" alt="delivery icon'">
+                <p class="price-text">home delivery</p>
+            </div>
+        </div>
+    </div>
+    <div class="conditions">
+        <p class="category"><b>Conditions</b></p>
+        <p class="text">As new - very good conditions</p>
+    </div>
+
+    <div class="summary">
+        <p class="category"><b>Summary</b></p>
+        <p class="text">"Diary of a Wimpy Kid” is a series of books in which a middle school boy recounts his
+            misadventures as a student among freckled classmates, unpleasant bullies and lessons.</p>
+    </div>
+
+    <div class="delivery-method">
+        <p class="category"><b>Delivery method and price</b></p>
+        <p class="text">Delivery: for free</p>
+    </div>
+
+    <div class="seller">
+        <p class="category"><b>About the seller</b></p>
+        <div class="reviewer">
+            <img class="user-profile" src="assets\user-square.svg" alt="user profile">
+            <div class="reviewer-details">
+                <p class="name">Cristina Sol</p>
+                <div class="stars">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-1.svg" alt="rating star'">
+                </div>
+            </div>
+        </div>
+        <p class="stating">I have bought two times from this seller, super nice and quick delivery.</p>
+
+        <div class="reviewer1">
+            <img class="user-profile" src="assets\user-square.svg" alt="user profile">
+            <div class="reviewer-details">
+                <p class="name">Luca Greg</p>
+                <div class="stars">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-2.svg" alt="rating star'">
+                    <img class="star-rating1" src="assets\star-1.svg" alt="rating star'">
+                </div>
+            </div>
+        </div>
+        <p class="stating">Very professional, no problems.</p>
+    </div>
+    <div class="buttons">
+        <button (click)="toUnimplemented()" class="btn btn-light" id="chat-btn">
+            <img src="assets/chat.svg" width="22" />
+        </button>
+        <button (click)="toGeneralInfo()" class="btn btn-light" id="chat-btn">
+            Buy
+        </button>
+    </div>
 </div>
