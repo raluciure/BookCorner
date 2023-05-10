@@ -2,7 +2,7 @@
 <form (ngSubmit)="submit($event)" ngNativeValidate class="container mt-3">
   <div class="row">
     <div class="col">
-      <h4>Purpose*</h4>
+      <label class="field">Purpose*</label>
       <select
         name="purpose"
         [(ngModel)]="purpose" required class="form-select">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="col">
-      <h4>Category*</h4>
+      <label class="field">Category*</label>
       <select
         name="category"
         required [(ngModel)]="category" class="form-select">
@@ -24,7 +24,7 @@
     </div>
 
     <div class="col">
-      <h4>Condition*</h4>
+      <label class="field">Condition*</label>
       <select
         name="condition"
         required [(ngModel)]="condition" class="form-select">
@@ -38,7 +38,7 @@
   </div>
 
   <div class="row mt-4">
-    <h4>Pictures* {{imageFiles.length}}/3</h4>
+    <label class="field">Pictures* {{imageFiles.length}}/3</label>
     <div class="d-flex flex-wrap">
       <div class="select-img border border-1 me-2" *ngFor="let img of imagesSrc; let index = index;">
         <img src="{{img}}" width="120" height="120"/>
@@ -53,7 +53,7 @@
   </div>
 
   <div class="mt-4">
-    <h4>Title of the book*</h4>
+    <label class="field">Title of the book*</label>
     <input
       name="title"
       required class="form-control" [(ngModel)]="title"/>
@@ -61,16 +61,16 @@
 
   <div class="row mt-4">
     <div class="col">
-      <h4>Author*</h4>
+      <label class="field">Author*</label>
       <input [(ngModel)]="author" required class="form-control"/>
     </div>
     <div class="col">
-      <h4>Edition*</h4>
+      <label class="field">Edition*</label>
       <input [(ngModel)]="edition" required class="form-control"/>
     </div>
 
     <div class="col">
-      <h4>ISBN</h4>
+      <label class="field">ISBN</label>
       <input
         name="isbn"
         [(ngModel)]="isbn" class="form-control"/>
@@ -78,13 +78,13 @@
   </div>
 
   <div class="mt-4">
-    <h4>Summary of the book*</h4>
+    <label class="field">Summary of the book*</label>
     <textarea
       name="summary"
       [(ngModel)]="summary" required class="form-control" ></textarea>
   </div>
 
-  <h4 class="mt-4">Price*</h4>
+  <label class="field" class="mt-4">Price*</label>
   <div class="input-group">
 
     <span class="input-group-text" id="basic-addon1">€</span>
@@ -95,7 +95,7 @@
 
 
   <div class="mt-4">
-    <h4>Delivery method*</h4>
+    <label class="field">Delivery method*</label>
     <select
       name="deliveryMethod"
       [(ngModel)]="deliveryMethod" required class="form-select">
@@ -106,7 +106,7 @@
   </div>
 
   <div class="mt-3">
-    <button class="btn btn-dark">NEXT</button>
+    <button class="btn btn-dark">Next</button>
   </div>
 
 </form>

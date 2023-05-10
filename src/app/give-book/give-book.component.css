@@ -29,6 +29,7 @@
   font-weight: bold;
 }
 .line {
+  width: 10vw;
   flex-grow: 1;
   height: 4px;
   background: gainsboro;

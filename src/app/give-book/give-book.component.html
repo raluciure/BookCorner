@@ -1,13 +1,12 @@
 <div class="container">
-  <button (click)="location.back()" class="btn btn-light">
+  <button (click)="location.back()" class="btn btn-light border-3 border-dark border">
     <img src="assets/back.png" width="20"/>
-    Back To Home
+    Back to home
   </button>
-  <h1 class="text-center">Give a book</h1>
+  <p style="font-size: 40px" class="text-center">Give a book</p>
   <div class="steps">
-    <div class="row">
-      <div class="col"></div>
-      <div class="col" *ngFor="let step of steps; let index = index">
+    <div class="d-flex justify-content-center">
+      <div class="d-flex align-items-center" *ngFor="let step of steps; let index = index">
         <div class="step">
           <div class="step-circle" [class.active]="step.number <= stepIndex">{{step.number}}</div>
           <div class="step-title">{{step.title}}</div>
