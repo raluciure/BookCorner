@@ -19,3 +19,12 @@
 .step-circle {
   background: #01001b;
 }
+
+
+.field {
+  font-size: 16px;
+}
+
+.carousel-item {
+  display: flex !important;
+}

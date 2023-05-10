@@ -1,14 +1,16 @@
 <div *ngIf="!publish" class="container">
   <div  class="row">
     <div class="col-12 col-lg-6 position-relative">
-      <img src="assets/edit.png" width="30"
+      <img src="assets/edit.png" width="20"
            class="position-absolute"
            role="button"
            (click)="onEdit.emit()"
            style="right: 40px; top: 10px; z-index: 1000"/>
-      <ngb-carousel [interval]="5000" [showNavigationArrows]="true" [showNavigationIndicators]="true">
-        <ng-template ngbSlide *ngFor="let img of data?.imagesSrc">
-          <img style="max-height: 100%" src="{{img}}" alt="Slide 1">
+      <ngb-carousel style="background: #01001b" [interval]="5000" [showNavigationArrows]="true" [showNavigationIndicators]="true">
+        <ng-template  ngbSlide *ngFor="let img of data?.imagesSrc">
+          <div class="d-flex">
+            <img class="m-auto" style="max-height: 100%; width: 200px" src="{{img}}" alt="Slide 1">
+          </div>
 
         </ng-template>
 
@@ -17,32 +19,32 @@
     <div class="col-12 col-lg-6">
       <h1>
         {{data?.title}}
-        <img  (click)="onEdit.emit()" src="assets/edit.png" width="30" role="button"/>
+        <img  (click)="onEdit.emit()" src="assets/edit.png" width="20" role="button"/>
       </h1>
       <h5>
         {{data?.category}}
       </h5>
-      <p>€ {{data?.price}}</p>
-      <p>
-        <img  (click)="onEdit.emit()" src="assets/car.png" width="30" role="button"/>
+      <p class="field-small">€ {{data?.price}}</p>
+      <p class="field-small">
+        <img  (click)="onEdit.emit()" src="assets/car.png" width="20" role="button"/>
           {{data?.deliveryMethod}}
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-12">
-      <h2>Conditions
-        <img  (click)="onEdit.emit()" src="assets/edit.png" width="30" role="button"/>
-      </h2>
+      <p class="field">Conditions
+        <img  (click)="onEdit.emit()" src="assets/edit.png" width="20" role="button"/>
+      </p>
       <p>
         {{data?.condition}}
       </p>
     </div>
     <div class="col-12">
-      <h2>Summary
-        <img  (click)="onEdit.emit()" src="assets/edit.png" width="30" role="button"/>
-      </h2>
-      <p>
+      <p class="field">Summary
+        <img  (click)="onEdit.emit()" src="assets/edit.png" width="20" role="button"/>
+      </p>
+      <p class="field-small">
         {{data?.summary}}
       </p>
     </div>
@@ -56,17 +58,17 @@
 <div *ngIf="publish">
   <h5 class="text-center mt-4">The advertisement related to</h5>
   <h2 class="text-center">"{{data.title}}"</h2>
-  <h5 class="text-center">
+  <p  class="text-center field-small">
     has been sent to our AI-checker. Sooner
     it will appear in the list of books
     available to buy.
-  </h5>
-  <h5 class="text-center">
+  </p>
+  <p class="text-center field-small">
     If you do not have any modification, you
     can proceed.
-  </h5>
+  </p>
 
   <div class="text-center">
-    <button class="mt-4 btn btn-dark btn-lg" (click)="onSubmit.emit()">NEXT</button>
+    <button class="mt-4 btn btn-dark btn-lg" (click)="onSubmit.emit()">Next</button>
   </div>
 </div>

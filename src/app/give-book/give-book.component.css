@@ -17,21 +17,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: gainsboro;
+  border: 3px solid #2d2d2d;
+  color: #000000;
 }
 
 .active {
-  background: #01001b;
+  background: #2d2d2d;
+  color: white;
 }
 
 .step-title {
   margin-top: 10px;
-  font-weight: bold;
 }
 .line {
+  width: 10vw;
   flex-grow: 1;
   height: 4px;
-  background: gainsboro;
+  background: #5b5a5a;
   margin-bottom: 30px;
 }
 .col {
@@ -43,4 +45,9 @@
 
 .button {
   background: #01001b;
+}
+
+.container {
+  font-family: monospace;
+  font-size: 18px;
 }
